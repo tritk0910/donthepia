@@ -2,12 +2,15 @@ import React from "react";
 import { CiGlobe } from "react-icons/ci";
 import { Button } from "../ui/button";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center h-[108px] px-12 fixed w-full backdrop-blur-sm">
+    <div className="flex justify-between items-center h-[108px] px-12 fixed w-full z-10">
       <div>
-        <img src={"/img/logo.png"} alt="logo" />
+        <Link href={"/"}>
+          <img src={"/img/logo.png"} alt="logo" />
+        </Link>
       </div>
       <div>
         <ul className="flex gap-16 uppercase">
@@ -16,7 +19,9 @@ export default function NavBar() {
           <li>Donquixote NFT</li>
           <li>Ecosystem</li>
           <li>Token</li>
-          <li>Roadmap</li>
+          <li>
+            <Link href={"/roadmap"}>Roadmap</Link>
+          </li>
           <li>Team & Partners</li>
           <li>FAQ</li>
         </ul>
