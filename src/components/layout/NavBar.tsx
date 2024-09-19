@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center h-[108px] px-12 fixed w-full z-10">
+    <div className="flex justify-between items-center h-[108px] px-12 fixed w-full z-50">
       <div>
         <Link href={"/"}>
           <img src={"/img/logo.png"} alt="logo" />
